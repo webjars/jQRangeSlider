@@ -20,14 +20,28 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <upstream.version>5.7.0</upstream.version>
         <upstream.url>http://slider.ghusse.com</upstream.url>
-        <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
+        <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
         <requirejs>
             {
                 "paths": {
-                    "jQRangeSlider": "jQRangeSlider"
+                    "jQAllRangeSliders": "jQAllRangeSliders-min",
+                    "jQAllRangeSliders-withRuler": "jQAllRangeSliders-withRuler-min",
+                    "jQDateRangeSlider": "jQDateRangeSlider-min",
+                    "jQDateRangeSlider-withRuler": "jQDateRangeSlider-withRuler-min",
+                    "jQEditRangeSlider": "jQEditRangeSlider-min",
+                    "jQEditRangeSlider-withRuler": "jQEditRangeSlider-withRuler-min",
+                    "jQRangeSlider": "jQRangeSlider-min",
+                    "jQRangeSlider-withRuler": "jQRangeSlider-withRuler-min"
                 },
                 "shim": {
-                    "jQRangeSlider": ["jquery-mousewheel"]
+                    "jQAllRangeSliders": ["jquery-mousewheel"],
+                    "jQAllRangeSliders-withRuler": ["jquery-mousewheel"],
+                    "jQDateRangeSlider": ["jquery-mousewheel"],
+                    "jQDateRangeSlider-withRuler": ["jquery-mousewheel"],
+                    "jQEditRangeSlider": ["jquery-mousewheel"],
+                    "jQEditRangeSlider-withRuler": ["jquery-mousewheel"],
+                    "jQRangeSlider": ["jquery-mousewheel"],
+                    "jQRangeSlider-withRuler": ["jquery-mousewheel"]
                 }
             }
         </requirejs>
